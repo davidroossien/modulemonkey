@@ -17,62 +17,64 @@ Basic commands:
 
 It assumes the standard golang local project structure
 
-$HOME/gowork
-    /bin
-    /pkg
-    /src
+$HOME/gowork<br>
+    /bin<br>
+    /pkg<br>
+    /src<br>
 
 In my local env, I modified:
 
-.zshrc
-    source ~/.bash_profile
-.bash_profile
-    export GOPATH="$HOME/gowork:$HOME/gowork/src"
-    export GOBIN="$HOME/gowork/bin"
-    export PATH="$PATH:$GOPATH:$GOPATH/bin"
-    source ~/.bashrc
-.bashrc
-    export PATH="${PATH}:~/usr/local/opt"
-    export GO111MODULE=on
-    alias gow='cd $HOME/gowork'
-    alias gos='cd $HOME/gowork/src/github.com/davidroossien'
+.zshrc<br>
+    source ~/.bash_profile<br>
+    
+.bash_profile<br>
+    export GOPATH="$HOME/gowork:$HOME/gowork/src"<br>
+    export GOBIN="$HOME/gowork/bin"<br>
+    export PATH="$PATH:$GOPATH:$GOPATH/bin"<br>
+    source ~/.bashrc<br>
+    
+.bashrc<br>
+    export PATH="${PATH}:~/usr/local/opt"<br>
+    export GO111MODULE=on<br>
+    alias gow='cd $HOME/gowork'<br>
+    alias gos='cd $HOME/gowork/src/github.com/davidroossien'<br>
 
 go env
 
-GO111MODULE="on"
-GOARCH="amd64"
-GOBIN="/Users/davidroossien/gowork/bin"
-GOCACHE="/Users/davidroossien/Library/Caches/go-build"
-GOENV="/Users/davidroossien/Library/Application Support/go/env"
-GOEXE=""
-GOEXPERIMENT=""
-GOFLAGS=""
-GOHOSTARCH="amd64"
-GOHOSTOS="darwin"
-GOINSECURE=""
-GOMODCACHE="/Users/davidroossien/gowork/pkg/mod"
-GONOPROXY=""
-GONOSUMDB=""
-GOOS="darwin"
-GOPATH="/Users/davidroossien/gowork:/Users/davidroossien/gowork/src"
-GOPRIVATE=""
-GOPROXY="https://proxy.golang.org,direct"
-GOROOT="/usr/local/Cellar/go/1.17.6/libexec"
-GOSUMDB="sum.golang.org"
-GOTMPDIR=""
-GOTOOLDIR="/usr/local/Cellar/go/1.17.6/libexec/pkg/tool/darwin_amd64"
-GOVCS=""
-GOVERSION="go1.17.6"
-GCCGO="gccgo"
-AR="ar"
-CC="clang"
-CXX="clang++"
-CGO_ENABLED="1"
-GOMOD="/dev/null"
-CGO_CFLAGS="-g -O2"
-CGO_CPPFLAGS=""
-CGO_CXXFLAGS="-g -O2"
-CGO_FFLAGS="-g -O2"
-CGO_LDFLAGS="-g -O2"
-PKG_CONFIG="pkg-config"
-GOGCCFLAGS="-fPIC -arch x86_64 -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/7q/n28537fs6d14c7bwpb51r8n40000gn/T/go-build1179182478=/tmp/go-build -gno-record-gcc-switches -fno-common"
+GO111MODULE="on"<br>
+GOARCH="amd64"<br>
+GOBIN="/Users/davidroossien/gowork/bin"<br>
+GOCACHE="/Users/davidroossien/Library/Caches/go-build"<br>
+GOENV="/Users/davidroossien/Library/Application Support/go/env"<br>
+GOEXE=""<br>
+GOEXPERIMENT=""<br>
+GOFLAGS=""<br>
+GOHOSTARCH="amd64"<br>
+GOHOSTOS="darwin"<br>
+GOINSECURE=""<br>
+GOMODCACHE="/Users/davidroossien/gowork/pkg/mod"<br>
+GONOPROXY=""<br>
+GONOSUMDB=""<br>
+GOOS="darwin"<br>
+GOPATH="/Users/davidroossien/gowork:/Users/davidroossien/gowork/src"<br>
+GOPRIVATE=""<br>
+GOPROXY="https://proxy.golang.org,direct"<br>
+GOROOT="/usr/local/Cellar/go/1.17.6/libexec"<br>
+GOSUMDB="sum.golang.org"<br>
+GOTMPDIR=""<br>
+GOTOOLDIR="/usr/local/Cellar/go/1.17.6/libexec/pkg/tool/darwin_amd64"<br>
+GOVCS=""<br>
+GOVERSION="go1.17.6"<br>
+GCCGO="gccgo"<br>
+AR="ar"<br>
+CC="clang"<br>
+CXX="clang++"<br>
+CGO_ENABLED="1"<br>
+GOMOD="/dev/null"<br>
+CGO_CFLAGS="-g -O2"<br>
+CGO_CPPFLAGS=""<br>
+CGO_CXXFLAGS="-g -O2"<br>
+CGO_FFLAGS="-g -O2"<br>
+CGO_LDFLAGS="-g -O2"<br>
+PKG_CONFIG="pkg-config"<br>
+GOGCCFLAGS="-fPIC -arch x86_64 -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/7q/n28537fs6d14c7bwpb51r8n40000gn/T/go-build1179182478=/tmp/go-build -gno-record-gcc-switches -fno-common"<br>
