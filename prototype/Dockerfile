@@ -1,0 +1,15 @@
+FROM alpine:3.4
+
+ARG BIN_PATH
+ARG BIN_FILE
+
+WORKDIR ${BIN_PATH}
+
+RUN apk update
+
+RUN echo ${BIN_PATH}
+RUN echo ${BIN_FILE}
+
+COPY . ./
+
+CMD ./${BIN_FILE}
